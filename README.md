@@ -21,15 +21,15 @@ This is a portfolio project built using **React JS** to showcase skills, project
    git clone <repository-url>
 
 2. Navigate to the project directory:
-
+    ```bash    
     cd react-portfolio
 
 3. Install dependencies:
-
+    ```bash
     npm install
 
 4. Start the development server:
-
+    ```bash
     npm start
 
 
