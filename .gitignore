@@ -1,3 +1,7 @@
-# envs 
+# Environment files
 .env.development
 .env
+
+# Default Node.js-related ignores
+node_modules/
+build/
