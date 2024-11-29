@@ -8,6 +8,8 @@ import ContactUs from './pages/Contact/ContactUs'
 import PagesLayout from './config/Layouts/PagesLayout'
 import PortfolioList from './pages/Portfolio/PortfolioList'
 import About from './pages/About/About'
+import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   const location = useLocation();
@@ -28,6 +30,8 @@ const App = () => {
 
   return (
     <>
+      <Analytics />
+      <SpeedInsights />
       <AppProvider>
         <Routes>
           <Route path={BASE_URL} element={<AppLayout />}>
