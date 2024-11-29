@@ -18,7 +18,7 @@ const App = () => {
   }, [location]);
   useEffect(() => {
     const applyStyles = (selector, styleProp, attr) => {
-      document.querySelectorAll(selector).forEach(el => {
+      document?.querySelectorAll(selector)?.forEach(el => {
         const attrValue = el.getAttribute(attr);
         if (attrValue) el.style[styleProp] = attr === 'data-background' ? `url(${attrValue})` : attrValue;
       });
