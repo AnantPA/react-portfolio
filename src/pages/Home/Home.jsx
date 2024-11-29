@@ -11,27 +11,54 @@ import NewsSection from './Components/NewsSection';
 import MobileMenu from './Components/MobileMenu';
 
 const Home = () => {
-    useEffect(() => {
-        const wow = new WOW.WOW({
-            live: false,
-            callback: (box) => {
-                if (box && box.className && typeof box.className === "string") {
-                    try {
-                        wow.resetAnimation(box);
-                    } catch (e) {
-                        console.error("WOW.js resetAnimation error:", e);
-                    }
-                }
-            },
-        });
-        const originalResetAnimation = wow.resetAnimation;
-        wow.resetAnimation = (target) => {
-            if (target && target.className && typeof target.className === "string") {
-                originalResetAnimation(target);
-            }
-        };
-        wow.init();
-    }, []);
+    // useEffect(() => {
+    //     const wow = new WOW.WOW({
+    //         live: false,
+    //         callback: (box) => {
+    //             if (box && box.className && typeof box.className === "string") {
+    //                 try {
+    //                     wow.resetAnimation(box);
+    //                 } catch (e) {
+    //                     console.error("WOW.js resetAnimation error:", e);
+    //                 }
+    //             }
+    //         },
+    //     });
+    //     const originalResetAnimation = wow.resetAnimation;
+    //     wow.resetAnimation = (target) => {
+    //         if (target && target.className && typeof target.className === "string") {
+    //             originalResetAnimation(target);
+    //         }
+    //     };
+    //     wow?.init();
+    // }, []);
+
+    // useEffect(() => {
+    //     const wow = new WOW.WOW({
+    //         live: false,
+    //         callback: (box) => {
+    //             if (box && box.className && typeof box.className === "string") {
+    //                 try {
+    //                     wow.resetAnimation(box);
+    //                 } catch (e) {
+    //                     console.error("WOW.js resetAnimation error:", e);
+    //                 }
+    //             }
+    //         },
+    //     });
+
+    //     const originalResetAnimation = wow.resetAnimation;
+    //     wow.resetAnimation = (target) => {
+    //         if (target && target.className && typeof target.className === "string") {
+    //             originalResetAnimation(target);
+    //         } else {
+    //             console.warn("Invalid target passed to resetAnimation:", target);
+    //         }
+    //     };
+
+    //     wow?.init();
+    // }, []);
+
 
     return (
         <>
