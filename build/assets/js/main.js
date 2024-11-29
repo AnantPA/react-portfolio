@@ -41,13 +41,13 @@
 
     ///////////////////////////////////////////////////
 	// 05. wow animation
-	// var wow = new WOW(
-	// 	{
-	// 	  mobile: false,
-	// 	}
-	//   );
-	//   wow.init();
-	// var windowOn = $(window);
+	var wow = new WOW(
+		{
+		  mobile: false,
+		}
+	  );
+	  wow.init();
+	var windowOn = $(window);
 
 
 	///////////////////////////////////////////////////
@@ -837,7 +837,7 @@
 	
 		});
 	}
-	
+
 		// 05. Search Js
 		$(".vid-play-btn").on("click", function () {
 			$(".vid-play-btn").toggleClass("open");
