@@ -51,29 +51,29 @@ const HeroSection = () => {
                                     data-wow-duration="0.7s"
                                     data-wow-delay="1s"
                                 >
-                                    <a className="tp-btn-white-brand" href="#">
+                                    <a className="tp-btn-white-brand" href="https://github.com/AnantPA" target='_blank'>
                                         <img
                                             className="mr-15"
-                                            src="/assets/img/hero/hero-icon-1.png"
-                                            alt=""
+                                            src="/assets/img/logo/git-logo.png"
+                                            alt="github-icon"
                                         />
-                                        Dribbble <i className="fal fa-long-arrow-right" />
+                                        GitHub <i className="fal fa-long-arrow-right" />
                                     </a>
-                                    <a className="tp-btn-white-brand" href="#">
+                                    <a className="tp-btn-white-brand" href="https://www.linkedin.com/in/anant-patel-a06901333" target='_blank'>
                                         <img
                                             className="mr-15"
-                                            src="/assets/img/hero/hero-icon-2.png"
-                                            alt=""
+                                            src="/assets/img/logo/linkdin-logo.png"
+                                            alt="linked-in-icon"
                                         />
-                                        Behance <i className="fal fa-long-arrow-right" />
+                                        Linkdin <i className="fal fa-long-arrow-right" />
                                     </a>
-                                    <a className="tp-btn-white-brand" href="#">
+                                    <a className="tp-btn-white-brand" href="mailto:anantpatel8901@gmail.com" target='_blank'>
                                         <img
                                             className="mr-15"
                                             src="/assets/img/hero/hero-icon-3.png"
-                                            alt=""
+                                            alt="gmail-icon"
                                         />
-                                        Message <i className="fal fa-long-arrow-right" />
+                                        Gmail <i className="fal fa-long-arrow-right" />
                                     </a>
                                 </div>
                             </div>

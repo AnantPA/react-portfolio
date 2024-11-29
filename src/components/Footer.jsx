@@ -31,7 +31,7 @@ const Footer = () => {
                             <div className="col-xl-4 col-lg-4 col-md-12 col-12">
                                 <div className="tp-copyright-logo-box text-md-center text-center text-lg-start mb-30">
                                     <div className="tp-copyright-logo">
-                                        <a href="index.html"><img src="/assets/img/logo/AP_logo.png" alt /></a>
+                                        <Link to={ROUTE_URLS.HOME}><img src="/assets/img/logo/footer_logo.png" alt /></Link>
                                     </div>
                                 </div>
                             </div>
@@ -43,10 +43,11 @@ const Footer = () => {
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                                 <div className="tp-copyright-social tp-copyright-social-two text-center text-lg-end mb-30">
-                                    <a href="#"><i className="fab fa-linkedin-in" /></a>
-                                    <a href="#"><i className="fab fa-facebook-f" /></a>
-                                    <a href="#"><i className="fab fa-instagram" /></a>
-                                    <a href="#"><i className="fab fa-youtube" /></a>
+                                    <a href="https://www.linkedin.com/in/anant-patel-a06901333" target='_blank'><i className="fab fa-linkedin-in" /></a>
+                                    {/* <a href="#"><i className="fab fa-facebook-f" /></a> */}
+                                    {/* <a href="#"><i className="fab fa-instagram" /></a> */}
+                                    {/* <a href="#"><i className="fab fa-youtube" /></a> */}
+                                    <a href="https://github.com/AnantPA" target='_blank'><i className="fab fa-github" /></a>
                                 </div>
                             </div>
                         </div>
