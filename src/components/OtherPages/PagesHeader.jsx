@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ROUTE_URLS from '../../config/routes';
+import { useAppContext } from '../../context/AppContext';
 
 const PagesHeader = () => {
+
     const [isSticky, setIsSticky] = useState(false);
+    const { handleTriggerAction } = useAppContext();
+    
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
@@ -72,7 +76,7 @@ const PagesHeader = () => {
                         <div className="col-md-6 col-6">
                             <div className="tp-header-right z-index-1 d-flex align-items-center justify-content-end">
                                 <a className="tp-btn-yellow d-none d-md-block" href="#">How it Works</a>
-                                <button className="tp-menu-bar"><i className="fal fa-bars" /></button>
+                                <button className="tp-menu-bar" type='button' onClick={handleTriggerAction}><i className="fal fa-bars" /></button>
                             </div>
                         </div>
                     </div>

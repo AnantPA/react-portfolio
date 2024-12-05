@@ -109,7 +109,7 @@ const AboutSkills = () => {
                     </div>
                     <div className="row feature-bottom-space">
                         {/* Skills Section */}
-                        <div className="col-xl-4 col-lg-4">
+                        <div className="col-xl-6 col-lg-6">
                             <div className="amfeature">
                                 <div className="amfeature__item">
                                     <h4 className="am-skill-sm-title">Skills</h4>
@@ -124,14 +124,13 @@ const AboutSkills = () => {
                                         <li><i className="fal fa-check" /> Developing RESTful APIs using Node.js and Express.js</li>
                                         <li><i className="fal fa-check" /> Database management with MongoDB</li>
                                         <li><i className="fal fa-check" /> Version control with Git and GitHub</li>
-                                        <li><i className="fal fa-check" /> Deployment using Docker and cloud platforms</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
                         {/* Education Section */}
-                        <div className="col-xl-4 col-lg-4">
+                        <div className="col-xl-6 col-lg-6">
                             <div className="amfeature am-fea-space">
                                 <div className="amfeature__item">
                                     <h4 className="am-skill-sm-title">Education</h4>
@@ -151,7 +150,7 @@ const AboutSkills = () => {
                         </div>
 
                         {/* Awards Section */}
-                        <div className="col-xl-4 col-lg-4">
+                        {/* <div className="col-xl-4 col-lg-4">
                             <div className="amfeature am-fea-space-2">
                                 <div className="amfeature__item">
                                     <h4 className="am-skill-sm-title">Awards</h4>
@@ -168,7 +167,7 @@ const AboutSkills = () => {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
