@@ -16,6 +16,8 @@ const PagesMobileMenu = () => {
     useEffect(() => {
         if (triggerAction) {
             setMenuOpen(true);
+        } else {
+            setMenuOpen(false);
         }
     }, [triggerAction]);
 
