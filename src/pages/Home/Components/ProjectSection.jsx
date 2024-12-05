@@ -1,25 +1,26 @@
-import React, { useState, useEffect, useRef } from "react";
-import Isotope from "isotope-layout";
+import React, { useEffect, useRef, useState } from "react";
+import mixitup from "mixitup";
 
 const ProjectSection = () => {
-    const [filterKey, setFilterKey] = useState("*");
-    const gridRef = useRef(null);
+    const containerRef = useRef(null);
+    const [activeFilter, setActiveFilter] = useState("all");
 
     useEffect(() => {
-        const iso = new Isotope(gridRef.current, {
-            itemSelector: ".grid-item",
-            layoutMode: "fitRows",
-            transitionDuration: "0.7s",
+        const mixer = mixitup(containerRef.current, {
+            selectors: {
+                target: ".mix",
+            },
+            animation: {
+                duration: 700,
+            },
         });
 
-        // Apply the filter when filterKey changes
-        iso.arrange({ filter: filterKey === "*" ? "*" : `.${filterKey}` });
+        // Clean up MixItUp instance on component unmount
+        return () => mixer.destroy();
+    }, []);
 
-        return () => iso.destroy();
-    }, [filterKey]);
-
-    const handleFilterChange = (filter) => {
-        setFilterKey(filter);
+    const handleFilterClick = (filter) => {
+        setActiveFilter(filter); // Update the active filter
     };
 
     const projectData = [
@@ -88,36 +89,42 @@ const ProjectSection = () => {
                     </div>
                 </div>
 
+                {/* Filter Buttons */}
                 <div className="row justify-content-center mb-80">
                     <div className="col-10 p-0 text-center">
                         <div className="tp-project-tab-button masonary-menu">
                             <button
-                                className={filterKey === "*" ? "active" : ""}
-                                onClick={() => handleFilterChange("*")}
+                                className={activeFilter === "all" ? "active" : ""}
+                                onClick={() => handleFilterClick("all")}
+                                data-filter="all"
                             >
                                 <span>All</span>
                             </button>
                             <button
-                                className={filterKey === "cat2" ? "active" : ""}
-                                onClick={() => handleFilterChange("cat2")}
+                                className={activeFilter === "cat2" ? "active" : ""}
+                                onClick={() => handleFilterClick("cat2")}
+                                data-filter=".cat2"
                             >
                                 <span>Landing Page</span>
                             </button>
                             <button
-                                className={filterKey === "cat3" ? "active" : ""}
-                                onClick={() => handleFilterChange("cat3")}
+                                className={activeFilter === "cat3" ? "active" : ""}
+                                onClick={() => handleFilterClick("cat3")}
+                                data-filter=".cat3"
                             >
                                 <span>Ecommerce</span>
                             </button>
                             <button
-                                className={filterKey === "cat4" ? "active" : ""}
-                                onClick={() => handleFilterChange("cat4")}
+                                className={activeFilter === "cat4" ? "active" : ""}
+                                onClick={() => handleFilterClick("cat4")}
+                                data-filter=".cat4"
                             >
                                 <span>SaaS</span>
                             </button>
                             <button
-                                className={filterKey === "cat5" ? "active" : ""}
-                                onClick={() => handleFilterChange("cat5")}
+                                className={activeFilter === "cat5" ? "active" : ""}
+                                onClick={() => handleFilterClick("cat5")}
+                                data-filter=".cat5"
                             >
                                 <span>Others</span>
                             </button>
@@ -125,11 +132,12 @@ const ProjectSection = () => {
                     </div>
                 </div>
 
-                <div ref={gridRef} className="row grid gx-45">
+                {/* Project Grid */}
+                <div ref={containerRef} className="row grid gx-45">
                     {projectData.map((project, index) => (
                         <div
                             key={index}
-                            className={`col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item ${project.categories.join(
+                            className={`col-xxl-6 col-xl-6 col-lg-6 col-md-6 mix ${project.categories.join(
                                 " "
                             )}`}
                         >
@@ -152,6 +160,8 @@ const ProjectSection = () => {
                             </div>
                         </div>
                     ))}
+                    {/* Optional sizer element for layout */}
+                    <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 my-sizer-element"></div>
                 </div>
             </div>
         </div>

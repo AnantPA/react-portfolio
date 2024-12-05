@@ -66,7 +66,7 @@ const PagesHeader = () => {
                     <div className="row align-items-center">
                         <div className="col-md-6 col-6">
                             <div className="tp-logo">
-                                <a href="index.html"><img src="assets/img/logo/logo-blue.png" alt /></a>
+                                <a href="index.html"><img src="assets/img/logo/logo-ap.svg" alt /></a>
                             </div>
                         </div>
                         <div className="col-md-6 col-6">
