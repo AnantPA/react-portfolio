@@ -3869,6 +3869,9 @@ only screen and (min-width: 1601px) and (max-width: 1800px) {
     width: 330px;
     padding: 30px;
   }
+  .tp-logo img {
+    width: 80px;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
