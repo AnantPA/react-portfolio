@@ -59,7 +59,7 @@ const Header = () => {
                     <div className="row">
                         <div className="col-md-6 col-6">
                             <div className="tp-logo">
-                                <Link to={ROUTE_URLS.HOME}><img src="/assets/img/logo/AP_logo.png" alt='mobile-logo' /></Link>
+                                <Link to={ROUTE_URLS.HOME}><img src="/assets/img/logo/logo-ap.svg" alt='mobile-logo' /></Link>
                             </div>
                         </div>
                         <div className="col-md-6 col-6">
