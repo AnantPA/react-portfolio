@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import ROUTE_URLS, { BASE_URL } from './config/routes'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import AppLayout from './config/Layouts/AppLayout'
 import Home from './pages/Home/Home'
 import { AppProvider } from './context/AppContext'
@@ -44,10 +44,12 @@ const App = () => {
             <Route path={ROUTE_URLS.PORT_LIST} element={<PortfolioList />} />
             <Route path={ROUTE_URLS.ABOUT} element={<About />} />
           </Route>
+
+          <Route path='*' element={<Navigate to={ROUTE_URLS.HOME} />} />
         </Routes>
       </AppProvider>
     </>
   )
 }
 
-export default App
+export default App;

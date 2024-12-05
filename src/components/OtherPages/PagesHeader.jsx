@@ -24,7 +24,7 @@ const PagesHeader = () => {
                         <div className="row align-items-center">
                             <div className="col-xxl-3 col-xl-3 col-lg-3">
                                 <div className="tp-logo text-start">
-                                    <Link to={ROUTE_URLS.HOME}><img src="assets/img/logo/AP_logo.png" alt /></Link>
+                                    <Link to={ROUTE_URLS.HOME}><img src="assets/img/logo/logo-ap.svg" alt /></Link>
                                 </div>
                             </div>
                             <div className="col-xxl-5 col-xl-6 col-lg-6">

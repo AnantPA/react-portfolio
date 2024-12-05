@@ -1,4 +1,6 @@
 import React from 'react'
+import ROUTE_URLS from '../../config/routes'
+import { Link } from 'react-router-dom'
 
 const PagesFooter = () => {
     return (
@@ -11,7 +13,7 @@ const PagesFooter = () => {
                             <div className="col-xl-3 col-lg-4 col-md-6">
                                 <div className="tp-footer-widget">
                                     <div className="tp-footer-widget__logo mb-30">
-                                        <a href="/"><img src="assets/img/logo/AP_logo.png" alt="Logo" /></a>
+                                        <a href="/"><img src="assets/img/logo/footer_logo.png" alt="Logo" /></a>
                                     </div>
                                     <div className="tp-footer-widget__text mb-30">
                                         <p>
@@ -36,11 +38,11 @@ const PagesFooter = () => {
                                     </div>
                                     <div className="tp-footer-widget__list">
                                         <ul>
-                                            <li><a href="/about">About Me</a></li>
-                                            <li><a href="/portfolio">Portfolio</a></li>
-                                            <li><a href="/contact">Contact</a></li>
-                                            <li><a href="/blog">Blog</a></li>
-                                            <li><a href="/resume">Resume</a></li>
+                                            <li><Link to={ROUTE_URLS.ABOUT}>About Me</Link></li>
+                                            <li><Link to={ROUTE_URLS.PORT_LIST}>Portfolio</Link></li>
+                                            <li><Link to={ROUTE_URLS.CONTACT}>Contact</Link></li>
+                                            {/* <li><Link to="/blog">Blog</Link></li> */}
+                                            {/* <li><Link to="/resume">Resume</Link></li> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -54,11 +56,11 @@ const PagesFooter = () => {
                                     </div>
                                     <div className="tp-footer-widget__list">
                                         <ul>
-                                            <li><a href="/projects">Projects</a></li>
-                                            <li><a href="/skills">Skills</a></li>
-                                            <li><a href="/testimonials">Testimonials</a></li>
+                                            <li><Link to={ROUTE_URLS.PORT_LIST}>Projects</Link></li>
+                                            <li><Link to={ROUTE_URLS.ABOUT}>Skills</Link></li>
+                                            {/* <li><a href="/testimonials">Testimonials</a></li>
                                             <li><a href="/blog">Blog</a></li>
-                                            <li><a href="/events">Events</a></li>
+                                            <li><a href="/events">Events</a></li> */}
                                         </ul>
                                     </div>
                                 </div>
