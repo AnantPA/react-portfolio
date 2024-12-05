@@ -54,7 +54,7 @@ const MobileMenu = () => {
                             <li className="has-dropdown has-mega-menu ">
                                 <Link to={ROUTE_URLS.ABOUT}>About<i className="fal fa-angle-down" /></Link>
                             </li>
-                            <li className="mean-last"><a href="contact.html">Contact</a></li>
+                            <li className="mean-last"><Link to={ROUTE_URLS.CONTACT}>Contact</Link></li>
                         </ul>
                     </nav></div>
                     </div>
