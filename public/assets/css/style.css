@@ -3754,7 +3754,7 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
 }
 
 .tp-logo img {
-  /* width: 180px; */
+  width: 180px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
