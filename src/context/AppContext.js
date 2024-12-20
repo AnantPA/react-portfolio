@@ -9,7 +9,6 @@ export const AppProvider = ({ children }) => {
     const handleTriggerAction = () => {
         setTriggerAction(prev => !prev);
     };
-    // New 
 
     useEffect(() => {
         console.log('111')
