@@ -13,6 +13,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   const location = useLocation();
+  // comment
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
