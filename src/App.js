@@ -13,7 +13,6 @@ import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   const location = useLocation();
-    // MAIN PAGE
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
@@ -35,7 +34,7 @@ const App = () => {
       <SpeedInsights />
       <AppProvider>
         <Routes>
-          <Route path={BASE_URL} element={<Ap pLayout />}>
+          <Route path={BASE_URL} element={<AppLayout />}>
 
             <Route path={ROUTE_URLS.HOME} element={<Home />} />
 
