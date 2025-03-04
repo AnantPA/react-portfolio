@@ -86,6 +86,8 @@ const ProjectSection = () => {
     },
   ];
 
+  //add project
+
   return (
     <div className="tp-project-area pt-120 pb-120 p-relative">
       <div className="tp-project-shape-one">
