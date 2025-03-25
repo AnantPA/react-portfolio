@@ -87,6 +87,7 @@ const ProjectSection = () => {
   ];
 
   //add project changes in the code
+  // add protfolio
 
   return (
     <div className="tp-project-area pt-120 pb-120 p-relative">
